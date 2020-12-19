@@ -1,0 +1,16 @@
+main{
+    display: block;
+    text-align: center;
+}
+a{
+    border: 1px dashed rgb(179, 92, 107);
+}
+h3{
+    text-shadow: 2px 1px yellowgreen;
+}
+h1{
+    border: 2px double yellowgreen;
+}
+table{
+    display: initial;
+}

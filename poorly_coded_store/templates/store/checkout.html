@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Amadon</title>
+    <link rel="stylesheet" href="{% static 'css/dojo_store.css' %}">
+    <title>Check Amadon</title>
 </head>
 <body>
+    <main>
     <h3>Thank you for your business!</h3>
-    <p>We charged your credit card for $</p>
-    <p>You have ordered # items so far and spent $$ with Amadon.com!</p>
+    <p>We charged your credit card for {{request.session.order_t}}$(USD) upon purchasing {{request.session.order_q}} items</p>
+    <p>You have ordered {{request.session.order_all}} items so far, and spent a total of {{request.session.all}}$(USD) with Amadon.com!</p>
     <p><a href="/">Go Back</a></p>
+    </main>
 </body>
 </html>

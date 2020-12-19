@@ -4,8 +4,8 @@ There are some serious issues with this code! Follow the instructions below to u
 Instructions
 ------------
 
-1. Clone this repository and peruse the code
-2. Run makemigrations and migrate to create the necessary database tables
+1. Clone this repository and peruse the code (done)
+2. Run makemigrations and migrate to create the necessary database tables (done)
 3. Seed the database with a few products (i.e. go into the Django shell and create a few products)
 4. Run the server and make a purchase
 5. Add some basic styling (use Bootstrap or another CSS framework)
